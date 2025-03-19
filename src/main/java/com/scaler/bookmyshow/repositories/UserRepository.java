@@ -14,4 +14,6 @@ public interface UserRepository extends JpaRepository<User, Long> {
 
     @Override
     List<User> findAllById(Iterable<Long> longs);
+
+    Optional<User> findByEmail(String email);
 }

@@ -14,6 +14,7 @@ import java.util.List;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
+@Table(name="movie_show")
 public class Show extends BaseModel{
     @ManyToOne
     private Movie movie;
